@@ -33,14 +33,15 @@ var brasil = [
     "independencia", "descobrimento", "agro", "etnia", "deus", "patria", "familia", "amor"
 ];
 // ADICIONAR PALAVRA AO ARRAY BRASIL
-var campo = document.querySelector(".add-palavra")
-var but = document.querySelector(".bt-salvar")
+var campo = document.querySelector(".add-palavra");
+var inptPalavrSort = document.querySelector(".inptsoeada");
+var but = document.querySelector(".bt-salvar");
 but.addEventListener('click', salvarNovaPalavra);
 function salvarNovaPalavra(e){
     campo.innerHTML = "";
     brasil.push(campo.value);
     console.log(brasil);
-    
+
     playerJogo();
 
     campo.style.display = "none";

@@ -136,6 +136,14 @@ label{
   font-weight: 700;
   color: #0A3871;
   }
+  .palavra-sorteada input{
+    margin-top: 50px;
+    border: none;
+    background: none;
+    border-color: #0A3871;
+    border-bottom-style: dashed;
+    border-bottom-width: 4px;
+  }
 .venceu{
     display: none;
     font-family: 'Inter', sans-serif;
