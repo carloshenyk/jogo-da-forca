@@ -4,10 +4,6 @@ var bplay = document.getElementById('bt-comecar');
 var parteCorpo = document.querySelectorAll(".parte-copo");
 var palavraSorteada = document.querySelector(".palavra-sorteada");
 var addPalavra = document.querySelector(".bt-add");
-var addInpt = document.querySelector("#add-palavra");
-var salvarP = document.querySelector(".bt-salvar");
-
-const valueAdd = addInpt.value;
 
 bplay.addEventListener('click', playerJogo);
 
@@ -33,16 +29,25 @@ function novoJogo(){
 
 // LOGICA DAS PALAVRAS
 
-const brasil = [
+var brasil = [
     "independencia", "descobrimento", "agro", "etnia", "deus", "patria", "familia", "amor"
 ];
 // ADICIONAR PALAVRA AO ARRAY BRASIL
-salvarP.addEventListener('click', adicionarPalavra);
-function adicionarPalavra(evento){
-    addInpt.innerText = "";
-    brasil.push(valueAdd);
+var campo = document.querySelector(".add-palavra")
+var but = document.querySelector(".bt-salvar")
+but.addEventListener('click', salvarNovaPalavra);
+function salvarNovaPalavra(e){
+    campo.innerHTML = "";
+    brasil.push(campo.value);
     console.log(brasil);
+    
+    playerJogo();
+
+    campo.style.display = "none";
+    but.style.display = "none";
+    document.querySelector(".bt-cancelar").style.display = "none";
 }
+// DINAMICA DO JOGO
 const palavraAleatoria = brasil[Math.floor(Math.random() * brasil.length)];
 const letraErrada = [];
 const letraCorreta = [];
