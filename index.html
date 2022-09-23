@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+   <header><img src="Vector.png" alt="Alura" class="logo"></header>
+
+   <div class="container" id="container">
+    <button class="botao-inicio bt-comecar" id="bt-comecar">Começar Jogo</button>
+    <button class="botao-inicio bt-add" id="bt-add">Adicionar nova palavra</button>
+   </div>
+
+<!--AREA PARA ADICIONAR PALAVRA-->
+    <div class="container-add-palavra">
+        <label for="add-palavra">Digite uma palavra ou frase
+            <input type="text" id="add-palavra" class="add-palavra">
+        </label>
+
+        <div class="botoes">
+            <button class="bt-salvar">Salvar e Começar</button>
+            <button class="bt-cancelar" onclick="novoJogo()">Cancelar</button>
+        </div>
+    </div>
+    <!--AREA DA FORCA-->
+    <div class="container-forca" id="container-forca">
+        <svg width="250" height="200" class="forca">
+            <!-- forca -->
+            <line x1="60" y1="20" x2="180" y2="20" />
+            <line x1="180" y1="20" x2="180" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="230" />
+            <line x1="20" y1="200" x2="100" y2="200" />
+
+            <!--Cabeça-->
+            <circle cx="180" cy="70" r="20" class="parte-copo"/>
+            <!--Toraxi-->
+            <line x1="180" y1="90" x2="180" y2="150" class="parte-copo" />
+            <!--braço direito-->
+            <line x1="180" y1="90" x2="200" y2="120" class="parte-copo" />
+            <!--braço esquerdo-->
+            <line x1="180" y1="90" x2="155" y2="120" class="parte-copo" />
+            <!--perna direita-->
+            <line x1="180" y1="150" x2="200" y2="180" class="parte-copo" />
+            <!--perna esquerda-->
+            <line x1="180" y1="150" x2="160" y2="180" class="parte-copo" />
+            
+        </svg>
+        <div class="venceu">
+            <p id="mensagem"></p>
+        </div>
+    </div>
+    <div class="palavra-sorteada"></div>
+    <div class="area-bt-jogo">
+        <button class="bt-njogo" onclick="novoJogo()">Novo Jogo</button>
+        <button class="bt-djogo" id="desistir" onclick="novoJogo()">Desistir</button>
+    </div>
+    <div class="mostrarLetrasErradas">
+        <h3>Letras erradas!</h3>
+    </div>
+    <div class="palavra-repetida">
+        Você Já usou esta Palavra!
+    </div>
+    <footer>
+        <a href="https://carloshenyk.github.io/" target="_blank" rel="noopener noreferrer">&copy; Carlos H L Santos </a>
+    </footer>
+</body>
+<script src="scrip.js"></script>
+</html>

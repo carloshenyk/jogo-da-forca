@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F3F5FC;
+}
+header{
+    width: 100%;
+    height: 15vh;
+}
+.logo{
+    position: absolute;
+    left: 10%;
+    right: 37.43%;
+    top: 3%;
+    bottom: 0%;
+}
+.container{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bt-comecar, .bt-add{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.bt-comecar{
+    background: #0A3871;
+    color: #F3F5FC;
+}
+.bt-add{
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+/* PAGINA ADICIONAR PALAVRA */
+.container-add-palavra{
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+.add-palavra{
+    width: 50vw;
+    height: 35vh;
+    border: none;
+    text-align: start;
+    top: 0;
+    margin: auto;
+    font-size: 32px;
+    background: #F3F5FC;
+    color: #0A3871;
+}
+.botoes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bt-salvar, .bt-cancelar{
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.bt-salvar{
+    background: #0A3871;
+    color: #F3F5FC;
+}
+.bt-cancelar{
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+/*STYLO DA FORCA*/
+
+.container-forca {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .forca {
+    fill: transparent;
+    stroke: #0A3871;
+    stroke-width: 4px;
+    stroke-linecap: round;
+  }
+
+  .area-bt-jogo{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .parte-copo{
+    display: none;
+  }
+  .palavra-sorteada{
+  display: none;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: #0A3871;
+  }
+.venceu{
+    display: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #4ab802;
+}
+  .bt-njogo, .bt-djogo{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .bt-njogo{
+    background: #0A3871;
+    color: #F3F5FC;
+  }
+  .bt-djogo{
+    border: 1.5px solid #0A3871;
+    color: #0A3871;
+  }
+
+  .palavra-repetida{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+ .mostrarLetrasErradas{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #0A3871;
+ }
+  footer{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+  }
+  footer a{
+    text-decoration: none;
+    color: #0A3871;
+    font-size: 18px;
+    font-weight: 400;
+  }
