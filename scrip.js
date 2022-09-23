@@ -105,7 +105,7 @@ function desenharForca(){
 function checarJogo(){
     let mesagem = "";
     if(letraErrada.length === parteCorpo.length){
-        mesagem = "Você Perdeu!";
+        mesagem = `Você Perdeu! <br> A palavra certra é: <strong>${palavraAleatoria}</strong>`;
     }
 
     if(palavraAleatoria === palavraSorteada.innerText){
