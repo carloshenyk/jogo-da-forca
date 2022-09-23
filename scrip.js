@@ -34,7 +34,7 @@ function novoJogo(){
 // LOGICA DAS PALAVRAS
 
 const brasil = [
-    "independencia", "descobrimento", "agro", "etnia", "deus", "patria", "familia"
+    "independencia", "descobrimento", "agro", "etnia", "deus", "patria", "familia", "amor"
 ];
 // ADICIONAR PALAVRA AO ARRAY BRASIL
 salvarP.addEventListener('click', adicionarPalavra);
@@ -105,7 +105,7 @@ function desenharForca(){
 function checarJogo(){
     let mesagem = "";
     if(letraErrada.length === parteCorpo.length){
-        mesagem = `Você Perdeu! <br> A palavra certra é: <strong>${palavraAleatoria}</strong>`;
+        mesagem = `Você Perdeu! <br> A palavra certa é: <strong>${palavraAleatoria}</strong>`;
     }
 
     if(palavraAleatoria === palavraSorteada.innerText){
