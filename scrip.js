@@ -86,7 +86,7 @@ function mostrarCertas(){
         if(letraCorreta.includes(letra)){
             palavraSorteada.innerHTML += `<span>${letra}</span>`;
         }else{
-            palavraSorteada.innerHTML += `<span> _ </span>`;
+            palavraSorteada.innerHTML += `<span><strong> _ </strong></span>`;
         }
     })
 }
