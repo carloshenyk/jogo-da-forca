@@ -30,7 +30,7 @@ function novoJogo(){
 // LOGICA DAS PALAVRAS
 
 var brasil = [
-    "independencia", "descobrimento", "agro", "etnia", "deus", "patria", "familia", "amor"
+    "independencia", "descobrimento", "agro", "etnia", "deus", "patria", "familia", "amor", "conservador", "brasil", "nordeste"
 ];
 // ADICIONAR PALAVRA AO ARRAY BRASIL
 var campo = document.querySelector(".add-palavra");
